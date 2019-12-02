@@ -16,7 +16,7 @@ So firstly, we have to disable that root-checker.
 ### Tools
 * Lastest Java and Java SE Development Kit.
 * [APK Easy Tool (Download the lastest beta version).](https://forum.xda-developers.com/android/software-hacking/tool-apk-easy-tool-v1-02-windows-gui-t3333960)
-* LLAS APKs bundle (You can get one on apkplz.net).
+* LLAS APKs bundle. You can copy your own from */data/app/com.klab.lovelive.allstars..../* from your Android device whichever has root access (recommended). You can also get one on apkplz.net (not recommended, but easier).
 
 ### Steps
 #### Decompile the APK
