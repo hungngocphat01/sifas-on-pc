@@ -56,6 +56,9 @@ There will be 2 APKs. We just need the one with *"Zipaligned"* at the end of its
 ![DeleteOriginalAPK](Images/6-DeleteOriginal.png)
 
 3. Copy this folder to somewhere which is accessible from Android-x86. You can compress and upload it to Google Drive, then download and extract it again from Android-x86.
+
+***Don't install LLASS in the way described below. Split APK Editor will not recognize the modified APK. I will make some corrections on this as soon as possible.***
+
 4. In Android-x86, install *Split APK Installer* from Play Store (I will use my Redmi 5 Plus to demonstrate this process).
 
 ![SAIFromPlayStore](Images/7-SAIPlayStore.jpg)
