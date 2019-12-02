@@ -1,18 +1,22 @@
 # An overview guide to playing LLAS on PC with Android-x86
 
+## Note: This guide has not been finished writing.
+
 ## Installing Android-x86
 
 Updating
 
 ## Make your own root-checker-less version of LLAS
 
-To play LLAS with key mapping on Android-x86, root access is required. However, LLAS has a built-in root-checker that prevent you from entering the game if your device has root access.
-So firstly, we have to disable that built-in root-checker of LLAS.
+To play LLAS with key-binding on Android-x86, root access is required. However, LLAS has a built-in root-checker that prevents you from entering the game if your device has root access enabled.
+So firstly, we have to disable that root-checker.
+
+***Note: You do not have to follow exactly what this guide tells you. From your own knowledge, you can follow the main idea of this guide and do it in another way, for example, with APK Editor right on Android-x86.***
 
 ### Tools
 * Lastest Java and Java SE Development Kit.
 * [APK Easy Tool (Download the lastest beta version).](https://forum.xda-developers.com/android/software-hacking/tool-apk-easy-tool-v1-02-windows-gui-t3333960)
-* LLAS APKs bundle (You can get one on apkplz.net).
+* LLAS APKs bundle. You can copy your own from */data/app/com.klab.lovelive.allstars..../* from your Android device whichever has root access (recommended). You can also get one on apkplz.net (not recommended, but easier).
 
 ### Steps
 #### Decompile the APK
