@@ -8,8 +8,10 @@ Updating
 
 ## Make your own root-checker-less version of LLAS
 
-To play LLAS with key-binding on Android-x86, root access is required. However, LLAS has a built-in root-checker that prevent you from entering the game if your device has root access.
-So firstly, we have to disable that built-in root-checker of LLAS.
+To play LLAS with key-binding on Android-x86, root access is required. However, LLAS has a built-in root-checker that prevents you from entering the game if your device has root access enabled.
+So firstly, we have to disable that root-checker.
+
+***Note: You do not have to follow exactly what this guide tells you. From your own knowledge, you can follow the main idea of this guide and do it in another way, for example, with APK Editor***
 
 ### Tools
 * Lastest Java and Java SE Development Kit.
