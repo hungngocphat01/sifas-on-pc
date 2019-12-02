@@ -1,5 +1,7 @@
 # An overview guide to playing LLAS on PC with Android-x86
 
+## Note: This guide has not been finished writing.
+
 ## Installing Android-x86
 
 Updating
