@@ -55,13 +55,13 @@ There will be 2 APKs. We just need the one with *"Zipaligned"* at the end of its
 
 #### Installing the patched version of LLAS
 1. Copy the remaining APK in the previous step to the directory where you extracted your LLAS bundle at the beginning.
-2. Delete your original main APK file (Note: the new one is the one with *"zipaligned"* at the end of its filename).
 
 ![DeleteOriginalAPK](Images/6-DeleteOriginal.png)
 
 3. Copy this folder to somewhere which is accessible from Android-x86. You can compress and upload it to Google Drive, then download and extract it again from Android-x86.
 
-***Don't install LLAS in the way described below. Split APK Installer will not recognize the modified APK. I will make some corrections on this as soon as possible.***
+***Below process is rather advanced. You should not perform it unless you are familiar with browsing Android system files.
+Note: Installing the patched APK directly with Split APK Installer won't work.***
 
 4. In Android-x86, install *Split APK Installer* from Play Store (I will use my Redmi 5 Plus to demonstrate this process).
 
@@ -71,12 +71,14 @@ There will be 2 APKs. We just need the one with *"Zipaligned"* at the end of its
 
 ![SAIMainScreen](Images/8-SaiMainMenu.jpg)
 
-6. Navigate to the folder where you placed all the APKs of LLAS. Select all of them, then tap *"Select"*
+6. Navigate to the folder where you placed all the APKs of LLAS. Select the **OLD main apk**, then the **other minor APKs**, but **NOT** the patched main APK.
 
 ![SelectAllAPKs](Images/9-SelectAllAPKs.jpg)
 
 7. Wait for the installation to complete.
-8. Enjoy. But we have not finished yet. We will have to do some key-mappings in order to play SIFAS with the best experience.
+8. Open a root explorer. Copy your **patched main APK** to */data/app/com.klab.lovelive.allstars.../*
+8. In */data/app/com.klab.lovelive.allstars.../*, delete *base.apk*. Rename your newly copied APK to *base.apk*. *Chmod 644* it.
+9. You are done. But we have not finished yet.
 
 ## Key-bindings
 
