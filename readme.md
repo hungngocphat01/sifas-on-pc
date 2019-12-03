@@ -2,12 +2,13 @@
 
 ## Note: This guide has not been finished writing.
 
-## Installing Android-x86
+## Section 1: Installing Android-x86
 
 Updating
 
-## Make your own root-checker-less version of LLAS
+## Section 2: Make your own root-checker-less version of LLAS
 
+**If you have a patched APK of LLAS, you can skip all steps in this section**
 To play LLAS with key-binding on Android-x86, root access is required. However, LLAS has a built-in root-checker that prevents you from entering the game if your device has root access enabled.
 So firstly, we have to disable that root-checker.
 
@@ -16,7 +17,9 @@ So firstly, we have to disable that root-checker.
 ### Tools
 * Lastest Java and Java SE Development Kit.
 * [APK Easy Tool (Download the lastest beta version).](https://forum.xda-developers.com/android/software-hacking/tool-apk-easy-tool-v1-02-windows-gui-t3333960)
-* LLAS APKs bundle. You can copy your own from */data/app/com.klab.lovelive.allstars..../* from your Android device whichever has root access (recommended). You can also get one on apkplz.net (not recommended, but easier).
+* LLAS APKs bundle.
+	* Grab another Android device. Open Qooapp, download LLAS, but do not install it yet. Navigate to */sdcard/Android/data/com.qooapp.qoohelper/files/Download/* and grab all LLAS APK files. (safe, recommended)
+	* You can also get one on apkplz.net (not safe, not recommended, but easier).
 
 ### Steps
 #### Decompile the APK
@@ -53,15 +56,19 @@ There will be 2 APKs. We just need the one with *"Zipaligned"* at the end of its
 
 ![Recompiled ZipAlign](Images/5-RecompiledFolder.png)
 
-#### Installing the patched version of LLAS
+#### Install the original version of LLAS first
+
+##### In Android-x86, install LLAS normally from Qooapp. If you cannot do so, do all of below steps.
+**If you can install LLAS normally from Qooapp, you can skip steps from 4 to 7. But it is highly recommended that you should read them as well to acknowledge which files we will process.**
+
 1. Copy the remaining APK in the previous step to the directory where you extracted your LLAS bundle at the beginning.
 
 ![DeleteOriginalAPK](Images/6-DeleteOriginal.png)
 
 3. Copy this folder to somewhere which is accessible from Android-x86. You can compress and upload it to Google Drive, then download and extract it again from Android-x86.
 
-***Below process is rather advanced. You should not perform it unless you are familiar with browsing Android system files.
-Note: Installing the patched APK directly with Split APK Installer won't work.***
+***Below process is rather advanced. You should not perform it unless you are familiar with browsing Android system files.***
+***Note: Installing the patched APK directly with Split APK Installer won't work.***
 
 4. In Android-x86, install *Split APK Installer* from Play Store (I will use my Redmi 5 Plus to demonstrate this process).
 
@@ -71,14 +78,17 @@ Note: Installing the patched APK directly with Split APK Installer won't work.**
 
 ![SAIMainScreen](Images/8-SaiMainMenu.jpg)
 
-6. Navigate to the folder where you placed all the APKs of LLAS. Select the **OLD main apk**, then the **other minor APKs**, but **NOT** the patched main APK.
+6. Navigate to the folder where you placed all the APKs of LLAS. Select the **original/old main APK**, then the **other minor APKs**, but **NOT** the patched main APK. In other words, we are installing the **original version** of LLAS. Then tap *Select (4)* at the bottom corner of the screen.
 
 ![SelectAllAPKs](Images/9-SelectAllAPKs.jpg)
 
 7. Wait for the installation to complete.
-8. Open a root explorer. Copy your **patched main APK** to */data/app/com.klab.lovelive.allstars.../*
-8. In */data/app/com.klab.lovelive.allstars.../*, delete *base.apk*. Rename your newly copied APK to *base.apk*. *Chmod 644* it.
-9. You are done. But we have not finished yet.
+
+#### Replace original LLAS file with patched one
+
+1. Open a root explorer. Copy your **patched main APK** to */data/app/com.klab.lovelive.allstars.../*
+2. In */data/app/com.klab.lovelive.allstars.../*, delete *base.apk*. Rename your newly copied APK to *base.apk*. *Chmod 644* it.
+3. You are done. But we have not finished yet.
 
 ## Key-bindings
 
