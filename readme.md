@@ -61,7 +61,7 @@ There will be 2 APKs. We just need the one with *"Zipaligned"* at the end of its
 
 * **In Android-x86, install LLAS normally from Qooapp. If you cannot do so, do all of below steps.**
 
-* ***If you can install LLAS normally from Qooapp, you can skip steps from 4 to 7. But it is highly recommended that you should read them as well to acknowledge which files we will process.***
+* ***If you can install LLAS normally from Qooapp, you can skip steps from 4 to 7. But it is highly recommended that you should read them as well to acknowledge which files we will work on.***
 
 1. Copy the remaining APK in the previous step to the directory where you extracted your LLAS bundle at the beginning.
 
