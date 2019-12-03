@@ -1,5 +1,8 @@
 # An overview guide to playing LLAS on PC with Android-x86
 
+![Cover](/Images/cover.jpg)
+This image is owned by KLab.
+
 ## Note: This guide has not been finished writing.
 
 ## Section 1: Installing Android-x86
