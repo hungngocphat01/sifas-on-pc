@@ -59,8 +59,9 @@ There will be 2 APKs. We just need the one with *"Zipaligned"* at the end of its
 
 #### Install the original version of LLAS first
 
-##### In Android-x86, install LLAS normally from Qooapp. If you cannot do so, do all of below steps.
-**If you can install LLAS normally from Qooapp, you can skip steps from 4 to 7. But it is highly recommended that you should read them as well to acknowledge which files we will process.**
+**In Android-x86, install LLAS normally from Qooapp. If you cannot do so, do all of below steps.**
+
+***If you can install LLAS normally from Qooapp, you can skip steps from 4 to 7. But it is highly recommended that you should read them as well to acknowledge which files we will process.***
 
 1. Copy the remaining APK in the previous step to the directory where you extracted your LLAS bundle at the beginning.
 
@@ -72,11 +73,9 @@ There will be 2 APKs. We just need the one with *"Zipaligned"* at the end of its
 ***Note: Installing the patched APK directly with Split APK Installer won't work.***
 
 4. In Android-x86, install *Split APK Installer* from Play Store (I will use my Redmi 5 Plus to demonstrate this process).
-
-![SAIFromPlayStore](Images/7-SAIPlayStore.jpg)
-
 5. Open Split APK Installer, tap on *Install APKs*.
 
+![SAIFromPlayStore](Images/7-SAIPlayStore.jpg)
 ![SAIMainScreen](Images/8-SaiMainMenu.jpg)
 
 6. Navigate to the folder where you placed all the APKs of LLAS. Select the **original/old main APK**, then the **other minor APKs**, but **NOT** the patched main APK. In other words, we are installing the **original version** of LLAS. Then tap *Select (4)* at the bottom corner of the screen.
