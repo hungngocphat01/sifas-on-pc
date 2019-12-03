@@ -46,6 +46,13 @@ You can click on *Decompiled APK Directory* under the *Decompile* button to open
 
 ![Replacing if-eqz with goto](Images/3-ChangeSmaliCommand.png)
 
+* **Advanced note**: The above piece of code is written in Smali, a low level programming language for Dalvik virtual machine. It is a little bit similar to Assembly. The overall idea of the above piece of code is:
+	* Invoke a method to check if your device has root access or not. Save the result to register *v0*.
+	* If *v0 = 0*, then your device has no root access. The program will jump to label *:cond_2*, which is just before *return-void*. The game will continue starting.
+	* Otherwise (your device have root access, register v0 != 0), it will execute a bunch of other lines of code, preventing the game from starting.
+	* We have just removed the conditional jump of the root checking process. The game will jump to *:cond_2* whether your device has root access or not.
+
+
 5. Save the file. You are done.
 
 #### c. Recompiling the APK
