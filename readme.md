@@ -38,8 +38,8 @@ You can click on *Decompiled APK Directory* under the *Decompile* button to open
 #### b. Remove root-checking command
 1. Navigate to *...\1 - Decompiles APKs\com.klab.lovelive.allstars_x.x.x_...\smali\com\klab\jackpot*
 2. Open the file named *JackpotActivityCallback.smali* with your favourite text editor (Notepad++ is highly recommended).
-3. Search for the following string: *if-eqz v0, :cond_2*
-4. Replace it with: *goto :cond_2*
+3. Search for the following string: ***if-eqz v0, :cond_2***
+4. Replace it with: ***goto :cond_2***
 
 ![Replacing if-eqz with goto](Images/3-ChangeSmaliCommand.png)
 
