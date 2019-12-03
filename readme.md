@@ -15,15 +15,15 @@ So firstly, we have to disable that root-checker.
 
 ***Note: You do not have to follow exactly what this guide tells you. From your own knowledge, you can follow the main idea of this guide and do it in another way, for example, with APK Editor right on Android-x86.***
 
-### Tools
+### 2.1. Tools
 * Lastest Java and Java SE Development Kit.
 * [APK Easy Tool (Download the lastest beta version).](https://forum.xda-developers.com/android/software-hacking/tool-apk-easy-tool-v1-02-windows-gui-t3333960)
 * LLAS APKs bundle.
 	* Grab another Android device. Open Qooapp, download LLAS, but do not install it yet. Navigate to */sdcard/Android/data/com.qooapp.qoohelper/files/Download/* and grab all LLAS APK files. (safe, recommended)
 	* You can also get one on apkplz.net (not safe, not recommended, but easier).
 
-### Steps
-#### Decompile the APK
+### 2.2. Steps
+#### a. Decompile the APK
 1. Extract the LLAS APKs bundle to somewhere on your computer, as well as the APK Easy Tool (preferred as *AET* from now on).
 2. Run AET (*apkeasytool.exe*), then drag-n-drop the main APK (the one with longest filename) of LLAS into AET.
 
@@ -35,7 +35,7 @@ You can click on *Decompiled APK Directory* under the *Decompile* button to open
 
 ![AET Decompiled Folder](Images/2-Decompiled-Folder.png)
 
-#### Remove root-checking command
+#### b. Remove root-checking command
 1. Navigate to *...\1 - Decompiles APKs\com.klab.lovelive.allstars_x.x.x_...\smali\com\klab\jackpot*
 2. Open the file named *JackpotActivityCallback.smali* with your favourite text editor (Notepad++ is highly recommended).
 3. Search for the following string: *if-eqz v0, :cond_2*
@@ -45,7 +45,7 @@ You can click on *Decompiled APK Directory* under the *Decompile* button to open
 
 5. Save the file. You are done.
 
-#### Recompiling the APK
+#### c. Recompiling the APK
 1. Go back to AET. 
 2. Under *Sign* section, tick *"ZipAlign after compile"* and *"Sign after compile"*
 
@@ -57,7 +57,7 @@ There will be 2 APKs. We just need the one with *"Zipaligned"* at the end of its
 
 ![Recompiled ZipAlign](Images/5-RecompiledFolder.png)
 
-#### Install the original version of LLAS first
+#### d. Install the original version of LLAS first
 
 **In Android-x86, install LLAS normally from Qooapp. If you cannot do so, do all of below steps.**
 
@@ -84,12 +84,12 @@ There will be 2 APKs. We just need the one with *"Zipaligned"* at the end of its
 
 7. Wait for the installation to complete.
 
-#### Replace original LLAS file with patched one
+#### e. Replace original LLAS file with patched one
 
 1. Open a root explorer. Copy your **patched main APK** to */data/app/com.klab.lovelive.allstars.../*
 2. In */data/app/com.klab.lovelive.allstars.../*, delete *base.apk*. Rename your newly copied APK to *base.apk*. *Chmod 644* it.
 3. You are done. But we have not finished yet.
 
-## Key-bindings
+## Section 3: Key-bindings
 
 Updating
