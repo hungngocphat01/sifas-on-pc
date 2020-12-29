@@ -49,9 +49,9 @@ You can click on `Decompiled APK Directory` under the `Decompile` button to open
 
 * **Advanced note**: The above root-checking code is written in Smali, which is a low-level programming language for Dalvik VM. It is highly identical to Assembly language. The overall idea of the mentioned piece of code is:
 	* Invoke a method to check for the presence of su binary on your device and save the result to register `v0`.
-	* If `v0 = 0*` (which means your device is not rooted), the program will jump to `return-void`. The game will be started normally.
+	* If `v0 = 0` (which means your device is not rooted), the program will jump to `return-void` (labled by `:cond_2`. The game will be started normally.
 	* Otherwise (your device has root access, register `v0 != 0`), it will jump to another label, preventing the game from being started.
-	* We have just removed the conditional jump of the root-checking process. The game will always jump to `:cond_2` whether your device has root access or not. As a result, SIFAS from now on will always start normally.
+	* We have just removed the conditional jump of the root-checking process. The game will always jump to `return-void` whether your device has root access or not. As a result, SIFAS from now on will always start normally.
 
 5. Save the file. You are done.
 
