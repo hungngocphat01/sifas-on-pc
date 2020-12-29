@@ -3,11 +3,11 @@
 ![Cover](/Images/cover.jpg)
 This image is owned by KLab.
 
-## Note: This guide has not been finished writing.
+## NOTE: Deprecated, unfinished.
 
 ## Section 1: Installing Android-x86
 
-Updating
+Updating (never).
 
 ## Section 2: Make your own root-checker-less version of LLAS
 
@@ -102,4 +102,4 @@ There will be 2 APKs. We just need the one with *"Zipaligned"* at the end of its
 
 ## Section 3: Key-bindings
 
-Updating
+Updating (never).
